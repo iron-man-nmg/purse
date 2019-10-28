@@ -1,0 +1,7 @@
+/.idea/*
+/timetravel-gaea-dal/target/
+/timetravel-gaea-service/target/
+/timetravel-gaea-test/target/
+/timetravel-gaea-webapp/target/
+/*/*.iml
+/velocity.log
