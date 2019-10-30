@@ -3,7 +3,9 @@ package com.nmg.purse;
 import com.gargoylesoftware.htmlunit.CookieManager;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.WebRequest;
+import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 import com.gargoylesoftware.htmlunit.util.Cookie;
 
 import java.io.IOException;
@@ -62,7 +64,18 @@ public class PayUrlService {
         //其他报文头字段可以根据需要添加
 
             HtmlPage page =  webClient.getPage(request);
+
+
+            System.out.println(page.asXml());
+
+            //获取支付宝按钮位置，
+            //选中
+            //获取立即支付按钮位置
+            //点击
+            //获取页面url
+
             System.out.println(page.asText());
+
         } catch (IOException e) {
             e.printStackTrace();
         }
